@@ -1,0 +1,24 @@
+.descripcion {
+    height: 40%;
+}
+
+.div-descripcion {
+    color: #FFFFFF;
+    width: 75%;
+    margin: 20% auto;
+    vertical-align: bottom;
+}
+
+.ocultar {
+    display: none;
+}
+
+.home-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.home-text {
+    font-size: 1.5rem;
+}
