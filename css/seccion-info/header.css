@@ -1,15 +1,10 @@
-.seccion-info {
-    width: 50vw;
-    height: 100vh;
-    background-color: #0A3871;
-}
-
 .head-enlace {
     display: flex;
     justify-content: space-around;
     margin: 5%;
     height: 2.5em;
     border-bottom: #FFFFFF solid 0.3rem;
+
 }
 
 .head-enlace-btn {
@@ -17,7 +12,7 @@
     border: none;
     color: #FFFFFF;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.3rem;
+    font-size: .75rem;
     font-weight: bold;
     height: 110%;
 }
@@ -36,4 +31,27 @@
 
 .head-enlace-btn:active {
     background-color: aqua;
+}
+
+@media screen and (min-width: 1024px) {
+    .head-enlace {
+        margin: 5% .5%;
+        width: 88%;
+    }
+
+    .head-enlace-btn {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1268px) {
+    .head-enlace {
+        margin: 5%;
+        width: 90%;
+        max-width: 1265px;
+    }
+    .head-enlace-btn {
+        font-size: 1.5rem;
+        height: 110%;
+    }
 }

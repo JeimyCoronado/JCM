@@ -5,8 +5,12 @@
 .div-descripcion {
     color: #FFFFFF;
     width: 75%;
-    margin: 20% auto;
-    vertical-align: bottom;
+    margin: 5% auto;
+}
+
+.descripcion__logo {
+    width: 100%;
+    margin: 2% auto;
 }
 
 .ocultar {
@@ -14,11 +18,36 @@
 }
 
 .home-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
+    max-width: 100%;
 }
 
 .home-text {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .descripcion {
+        width: 88%;
+    }
+    .descripcion__logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1268px) {
+    .div-descripcion {
+        margin: 10% auto;
+    }
+    .home-title {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+    .home-text {
+        font-size: 1.5rem;
+    }
 }

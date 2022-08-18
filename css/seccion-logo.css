@@ -1,10 +1,35 @@
 .seccion-logo {
-    width: 50vw;
-    height: 100vh;
+    width: 100vw;
+    height: fit-content;
+    display: none;
     background-color: #FFFFFF;
 }
 
-.logo {
-    margin: 40% 10%;
-    width: 35em;
+.seccion-logo__logo {
+    width: 100%;
+    margin: 2% auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .seccion-logo {
+        display: block;
+        width: 40vw;
+        height: 100vh;
+
+    }
+    .seccion-logo__logo {
+        margin: 40% 10%;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1268px) {
+    .seccion-logo {
+        display: block;
+        width: 50vw;
+    }
+    .seccion-logo__logo {
+        margin: 40% 10%;
+        width: 75%;
+    }
 }
