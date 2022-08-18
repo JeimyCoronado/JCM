@@ -1,10 +1,7 @@
-.footer {
-    width: 75%;
-    margin: 10.5rem auto;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.subtitle {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-weight: 700;
 }
 
 .datos {
@@ -14,6 +11,7 @@
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .redes {
@@ -35,16 +33,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .footer {
-        margin: 8% 11%;
-        height: 20%;
-    }
-}
-
-@media screen and (min-width: 1268px) {
-    .footer {
-        width: 75%;
-        margin: 12.5% 11%;
-        height: 20%;
+    .subtitle {
+        font-size: 2rem;
     }
 }

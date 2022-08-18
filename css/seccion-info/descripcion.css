@@ -17,14 +17,14 @@
     display: none;
 }
 
-.home-title {
+.descripcion-title {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: .5rem;
     max-width: 100%;
 }
 
-.home-text {
+.descripcion-text {
     font-size: 1.35rem;
 }
 
@@ -41,13 +41,13 @@
     .div-descripcion {
         margin: 10% auto;
     }
-    .home-title {
+    .descripcion-title {
         font-size: 4rem;
         font-weight: bold;
         margin-bottom: 2rem;
         max-width: 100%;
     }
-    .home-text {
+    .descripcion-text {
         font-size: 1.5rem;
     }
 }

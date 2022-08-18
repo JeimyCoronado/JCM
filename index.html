@@ -11,8 +11,8 @@
         <link href="./css/seccion-logo.css" rel="stylesheet">
         <link href="./css/seccion-info/seccion-info.css" rel="stylesheet">
         <link href="./css/seccion-info/header.css" rel="stylesheet">
-        <link href="./css/seccion-info/home.css" rel="stylesheet">
-        <link href="./css/seccion-info/footer.css" rel="stylesheet">
+        <link href="./css/seccion-info/descripcion.css" rel="stylesheet">
+        <link href="./css/seccion-info/contacto.css" rel="stylesheet">
     </head>
     <body>
         <section class="seccion-logo">
@@ -24,24 +24,24 @@
                     <ul class="head-enlace">
                         <li><button class="head-enlace-btn head-enlace-btn-seleccionado" data-btn-home>HOME</button></li>
                         <li><button class="head-enlace-btn" data-btn-nosotros>NOSOTROS</button></li>
-                        <li><button class="head-enlace-btn">NUESTROS PRODUCTOS</button></li>
-                        <li><button class="head-enlace-btn">CONTACTO</button></li>
+                        <li><button class="head-enlace-btn" data-btn-productos>NUESTROS PRODUCTOS</button></li>
+                        <li><button class="head-enlace-btn" data-btn-contacto>CONTACTO</button></li>
                     </ul>
                 </nav>
             </header>
             <main class="descripcion">
                 <div class=" div-descripcion" data-home>
-                    <h2 class="home-title">Bienvenido</h2>
+                    <h2 class="descripcion-title">Bienvenido</h2>
                     <img src="./img/logo.jpeg" class="descripcion__logo">
-                    <p class="home-text">Somos una empresa dedicada a la distribución de productos de consumo masivo, 
+                    <p class="descripcion-text">Somos una empresa dedicada a la distribución de productos de consumo masivo, 
                         satisfaciendo las necesidades del cliente a través de la calidad de nuestros productos, 
                         de servicio personalizado, eficiencia y rentabilidad, con responsabilidad frente a nuestros clientes, 
                         accionistas, colaboradores, proveedores y a la sociedad en general.</p>
                 </div>
                 <div class="div-descripcion ocultar" data-nosotros>
-                    <h2 class="home-title">Nosotros</h2>
+                    <h2 class="descripcion-title">Nosotros</h2>
                     <img src="./img/logo.jpeg" class="descripcion__logo">
-                    <p class="home-text">
+                    <p class="descripcion-text">
                         GRUPO JCM nació gracias a la faceta emprendedora de una familia, detectando una necesidad de mercado y 
                         creando la oportunidad de poder satisfacerla. El carácter empresarial está en nuestro ADN. 
                         Todo nuestro empeño tiene reflejo en lo que hacemos y en cómo lo hacemos. Cuyo pilar es satisfacer la 
@@ -50,19 +50,25 @@
                         Donde los clientes son el eje principal de nuestra compañía.
                     </p>
                 </div>
+                <div class="div-descripcion ocultar" data-productos>
+                    <h2>Productos</h2>
+                </div>
+                <div class="div-descripcion ocultar" data-contacto>
+                    <div class="datos">
+                        <p class="subtitle">Realiza tu pedido:</p>
+                        <p>grupojcm@gmail.com</p>
+                        <p>947 214 689</p>
+                        <p class="subtitle">Síguenos en nuestras redes y entérate de nuestras promociones   </p>
+                    </div>
+                    <div class="redes">
+                        <a class="link" href="https://facebook.com"><i class="fa-brands fa-square-facebook redes-color"></i></a>
+                        <a class="link" href="https://twitter.com"><i class="fa-brands fa-square-twitter redes-color"></i></a>
+                        <a class="link" href="https://instagram.com"><i class="fa-brands fa-square-instagram redes-color"></i></a>
+                        <a class="link" href="https://wa.me/message/2WB47LQFTBTRG1" target="_blank"><i class="fa-brands fa-square-whatsapp redes-color"></i></a>
+                    </div>
+                </div>
             </main>
-            <footer class="footer">
-                <div class="datos">
-                    <p>grupojcm@gmail.com</p>
-                    <p>947 214 689</p>
-                </div>
-                <div class="redes">
-                    <a class="link" href="https://facebook.com"><i class="fa-brands fa-square-facebook redes-color"></i></a>
-                    <a class="link" href="https://twitter.com"><i class="fa-brands fa-square-twitter redes-color"></i></a>
-                    <a class="link" href="https://instagram.com"><i class="fa-brands fa-square-instagram redes-color"></i></a>
-                    <a class="link" href="https://wa.me/message/2WB47LQFTBTRG1" target="_blank"><i class="fa-brands fa-square-whatsapp redes-color"></i></a>
-                </div>
-            </footer>
+            
         </section>
         <script type="module" src="./js/javascript.js"></script>
     </body>
