@@ -48,10 +48,10 @@
     .head-enlace {
         margin: 5%;
         width: 90%;
-        max-width: 1265px;
     }
     .head-enlace-btn {
-        font-size: 1.35rem;
-        height: 110%;
+        font-size: 1.5rem;
+        height: 100%;
+        width: max-content;
     }
 }
