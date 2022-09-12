@@ -21,36 +21,22 @@
             }
             else{
                 btns[i].classList.remove("head-enlace-btn-seleccionado");
-                divs[i].classList.add("ocultar")
+                divs[i].classList.add("ocultar");
             }
         }
-
-
-        // divNosotros.classList.add("ocultar");
-        // divHome.classList.add("ocultar");
-        // divProductos.classList.add("ocultar");
-        // divContacto.classList.add("ocultar");
-        // btnHome.classList.remove("head-enlace-btn-seleccionado");
-        // btnNosotros.classList.remove("head-enlace-btn-seleccionado");
-        // btnProductos.classList.remove("head-enlace-btn-seleccionado");
-        // btnContacto.classList.remove("head-enlace-btn-seleccionado");
-
-        // if(boton == btnHome) {
-        //     btnHome.classList.add("head-enlace-btn-seleccionado"); 
-        //     divHome.classList.remove("ocultar");
-        // }else if(boton == btnNosotros) {
-        //     btnNosotros.classList.add("head-enlace-btn-seleccionado");
-        //     divNosotros.classList.remove("ocultar");
-        // }else if(boton == btnProductos) {
-        //     btnProductos.classList.add("head-enlace-btn-seleccionado");
-        //     divProductos.classList.remove("ocultar");
-        // }else {
-        //     btnContacto.classList.add("head-enlace-btn-seleccionado");
-        //     divContacto.classList.remove("ocultar");
-        // }
     }
 
-    btnHome.addEventListener("click", mostrarSeccion);
-    btnNosotros.addEventListener("click", mostrarSeccion);
-    btnContacto.addEventListener("click", mostrarSeccion);
+    btns.forEach((element) => element.addEventListener("click", mostrarSeccion));
+
+    const imagenes = ["cielo","volt","sporade","gatorade","pepsi","pulp","fanta","ajinomen","monster"];
+    const ubicacion = "./img/productos/";
+    const mostrarProductos = () => {
+        const productos = document.querySelector(".productos");
+        imagenes.forEach((imagen) => {
+            const imgTag = `<img class="producto" src="${ubicacion+imagen}.png">`;
+            productos.innerHTML += imgTag;
+        });
+    }
+    mostrarProductos();
+
 })();
